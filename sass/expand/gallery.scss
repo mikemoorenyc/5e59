@@ -1,0 +1,122 @@
+
+#gallery-container {
+  .slick-dots {
+    padding-left:0;
+    padding-top: 10px;
+    list-style:none;
+    letter-spacing:-4px;
+    text-align: center;
+    > li {
+      margin: 0;
+      display:inline-block;
+      vertical-align:top;
+      margin: 0 2px;
+      button {
+        display:block;
+        width:8px;
+        height: 8px;
+        border-radius:50%;
+        border:2px solid white;
+        font-size:.001em;
+      }
+      &.slick-active {
+        button {
+          background:white;
+        }
+      }
+    }
+  }
+}
+
+@media($dt) {
+  #gallery {
+    padding: 18px 0;
+    position: relative;
+    &:after {
+      display:block;
+      content: '';
+      right: 70px;
+      width:1px;
+      background:white;
+      top:5px;
+      bottom:5px;
+      position:absolute;
+    }
+    .slide {
+      >img {
+        width: 100%;
+      }
+
+    }
+    #gallery-container {
+      button {
+        display:block;
+        left: 0;
+        top: 0;
+        width: 115px;
+        background: green;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        &.slick-next {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+    .bracket {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 43px;
+      pointer-events: none;
+      .line, &:before, &:after {
+        display:block;
+        content: '';
+        position: absolute;
+        background: white;
+      }
+      &:after {
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 6px;
+      }
+      &:before, .line {
+        left: 0;
+        right: 0;
+        height: 6px;
+        top: 0;
+      }
+      .line {
+        top: auto;
+        bottom: 0;
+      }
+      &.front-bracket {
+        left: 65px;
+
+
+      }
+      &.back-bracket {
+        right: 65px;
+
+        &:before, &:after, .line  {
+          background: none;
+          border: 1px solid white;
+
+        }
+        &:after {
+
+          left: auto;
+          right: 0;
+          background:black;
+          border-width: 0 1px 0px 1px;
+
+          top: 5px;
+          bottom: 5px;
+        }
+      }
+    }
+  }
+
+}

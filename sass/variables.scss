@@ -1,0 +1,35 @@
+$ts: 0.5s;
+
+/*Site Directory. Probably Don't need this*/
+//Looks like url('@{siteDir}/assets/whatever.png')
+
+
+
+$imgDir: '***REPLACEWITHTHEMEDIRECTORY***assets/imgs';
+$siteDir: '***REPLACEWITHTHEMEDIRECTORY***';
+
+
+/*BREAK POINTS*/
+$tab: 'min-width:401px';
+$dt: 'min-width:801px';
+
+/* SITE COLORS */
+$body-bg: black;
+$main-color: white;
+$orange: #f7941d;
+$link-color: #bc812c;
+$link-color-hover: black;
+
+$white-50: rgba(white, .54);
+$white-25: rgba(white,.23);
+
+/*FONTS*/
+$font-family:  'Founders', "Helvetica", sans-serif;
+$font-size-base: 14px;
+$line-height-base:  1.428571429;
+$tungsten: 'Tungsten A','Tungsten B','Tungsten-Book','Impact';
+
+
+$left-width: percentage(630/1200);
+$right-gutter: percentage(150/1200);
+$left-gutter: percentage(90/1200);

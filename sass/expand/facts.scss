@@ -1,0 +1,99 @@
+#facts {
+  padding: 40px 0 55px;
+  @media($dt) {
+    padding: 0 0 80px;
+  }
+}
+#facts {
+  .copy-block {
+    @media($dt) {
+      padding:130px $right-gutter (114px-50px) $left-width;
+      position: relative;
+      background: url('../assets/imgs/orange-5.jpg') 10% center no-repeat;
+      background-size: 40%;
+
+    }
+  }
+}
+#fact-list {
+  padding: 50px 36% 0 3.75%;
+  position: relative;
+  @media($dt) {
+    padding: 0;
+    text-align: center;
+
+  }
+
+  &:before {
+    display:block;
+    position: absolute;
+    content:'';
+    background: url('../assets/imgs/orange-5.jpg') 90% top no-repeat;
+    background-size: 55% auto;
+    width: 100%;
+    height:100%;
+    right: -5%;
+    top: 5%;
+    @media($dt) {
+      display:none;
+    }
+  }
+  >li {
+    text-align: left;
+    position: relative;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display:inline-block;
+    vertical-align:top;
+    clear:both;
+    margin-bottom:30px;
+    margin-right: 20px;
+    @media($dt) {
+      margin: 50px 45px 0 45px;
+
+    }
+    &:last-child {
+      margin-bottom:0;
+    }
+    .header {
+      font-weight: 700;
+      font-size:10px;
+      letter-spacing:.5em;
+      line-height:1.2em;
+      color:$orange;
+      @media($dt) {
+        font-size:12px;
+      }
+    }
+    hr {
+      margin: 10px 0 15px 0;
+      height: 1px;
+      background: $white-50;
+    }
+    .fact {
+      font-size:48px;
+      @media($dt) {
+        font-size:60px;
+      }
+    }
+  }
+}
+
+
+/*
+#fact-list {
+  letter-spacing: -4px;
+  margin: 0 5%;
+  text-align: center;
+  > li {
+    text-align: left;
+    display:inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    margin-left: 30px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+*/

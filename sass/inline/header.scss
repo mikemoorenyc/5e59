@@ -1,0 +1,50 @@
+header {
+  z-index:9;
+  overflow:hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  backface-visibility: hidden;
+
+  html.__scrolled-down & {
+    > div {
+      background: rgba(black,.75);
+      padding: 10px 3.75%;
+      @media($dt) {
+        padding: 15px 65px;
+      }
+    }
+  }
+  > div {
+    padding: 20px 3.75%;
+    transition: all $ts;
+    background-color: rgba(0,0,0,0 );
+    @media($dt) {
+      padding: 25px 65px;
+    }
+  }
+  #logo {
+    float: left;
+    img {
+      width: 156px;
+      height: 28px;
+      @media($dt) {
+        width: 191px;
+        height: 35px;
+      }
+    }
+  }
+  #menu-pop {
+    float: right;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    @media($dt) {
+      line-height: 35px;
+      font-size: 16px;
+    }
+  }
+}

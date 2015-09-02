@@ -1,0 +1,121 @@
+nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: $orange;
+  z-index:9;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0s, opacity $ts;
+  a.close-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width:30px;
+    height: 30px;
+    svg {
+      display:block;
+      width:30px;
+      height:30px;
+    }
+    @media($dt) {
+      right: 60px;
+      top: 60px;
+      width: 50px;
+      height:50px;
+      svg {
+        width:50px;
+        height:50px;
+      }
+    }
+  }
+  > ul {
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    >li {
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all $ts;
+      a {
+        font-family: $tungsten;
+        text-transform: uppercase;
+        font-size: 40px;
+        padding: 10px 0;
+        &:hover, &.active {
+          color:black;
+          @media($dt) {
+            color:$orange;
+          }
+        }
+
+      }
+    }
+  }
+
+  @media($dt) {
+    height:85px;
+    background:none;
+    overflow:hidden;
+    opacity: 1;
+    transform: none;
+    width: auto;
+    left:auto;
+    right: 0;
+    html.__scrolled-down & {
+      height:65px;
+    }
+    > ul {
+      position:static;
+      transform:none;
+      text-align:right;
+      padding-right:65px !important;
+      > li {
+        display:inline-block;
+        letter-spacing:normal;
+        transform: none !important;
+        opacity:1;
+        a {
+          font-family: $font-family;
+          display:block;
+          font-size:16px;
+          padding: 0 0 0 30px;
+          line-height:85px;
+          transition:line-height $ts;
+          letter-spacing:.05em;
+          html.__scrolled-down & {
+            line-height:65px;
+          }
+        }
+        &.dl-link {
+          @media($dt) {
+            display:inline-block;
+          }
+          .icon {
+            display:inline-block;
+            vertical-align:middle;
+            svg {
+              width:15px;
+              height:19px;
+              * {
+                fill:white;
+              }
+            }
+          }
+          a:hover {
+            * {
+              fill: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

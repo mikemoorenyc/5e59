@@ -1,0 +1,16 @@
+.headline {
+  padding: 0 3.75%;
+  h2 {
+
+    font-size:60px;
+    @media($dt) {
+      font-size:80px;
+    }
+    &.sm {
+      font-size:48px;
+      @media($dt) {
+        font-size:80px;
+      }
+    }
+  }
+}

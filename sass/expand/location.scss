@@ -1,0 +1,80 @@
+#location {
+  padding:55px 0 70px 0;
+  @media($dt) {
+    padding: 0 0 105px 0;
+  }
+  .headline {
+    padding-right:35%;
+    padding-bottom: 50px;
+    @media($dt) {
+      padding: 0 0 34px 0;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      padding: 0 30px 0 percentage(170/1200);
+      width:$left-width;
+      transform:translateY(-50%);
+
+    }
+  }
+  .copy-block {
+    @media($dt) {
+      padding:0;
+      padding: 105px $left-gutter 105px $left-width;
+    }
+  }
+  .location-copy {
+    padding-top:5px;
+    background: url(../assets/imgs/water-5.jpg) 90% top no-repeat;
+    background-size: 50% auto;
+    padding-bottom:55px;
+    @media($dt) {
+      background: none;
+      padding: 0;
+      position:relative;
+
+    //  padding: 95px $right-gutter 90px $left-width;
+    //  background-position: 10% 50%;
+    //  background-size: 40% auto;
+
+    }
+  }
+  #thumbnail-holder {
+    margin: 0 3.75%;
+    position:relative;
+  }
+  .location-pop {
+    position:relative;
+    display:inline-block;
+    .magnify {
+      position:absolute;
+      right:10px;
+      top:10px;
+      html._touch-disabled & {
+        display: none;
+      }
+      svg {
+        width:15px;
+        height:15px;
+        * {
+          fill:white;
+        }
+      }
+    }
+  }
+}
+#map-modal {
+  img.map-hi {
+    opacity:0;
+    transition:opacity $ts;
+    position:relative;
+  //  left:50%;
+  //  top:50%;
+    max-width:none;
+    transform:translate(-45%,0);
+
+    &.__loaded {
+      opacity:1;
+    }
+  }
+}

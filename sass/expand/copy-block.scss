@@ -1,0 +1,21 @@
+.copy-block {
+  padding: 0 3.75%;
+  color: $orange;
+  max-width:500px;
+  @media($dt) {
+    max-width:100%;
+  }
+  h2 {
+    line-height:1em;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $white-50;
+    font-weight:600;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.5em;
+  }
+  .copy {
+    letter-spacing:.05em;
+  }
+}

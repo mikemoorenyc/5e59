@@ -1,0 +1,86 @@
+#intro-scroll {
+  padding: 25px 0;
+  text-align: center;
+  @media($dt) {
+    padding:50px 0;
+  }
+  h1 {
+    display:inline-block;
+    position: relative;
+    max-width: 85%;
+    padding: 13px 20px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: (15em/10);
+    text-transform:uppercase;
+    letter-spacing:1em;
+    //text-indent:1em;
+    @media($dt) {
+      padding:30px 33px;
+      font-size: 20px;
+      line-height:1em;
+    }
+    .text {
+      opacity: 0;
+      transition:opacity $ts;
+      transition-delay:$ts*2;
+      display:block;
+      backface-visibility:hidden;
+      html.__scroll-activated & {
+        opacity:1;
+      }
+    }
+    .bracket {
+      display:block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width:10px;
+      border-left:2px solid $orange;
+      left: 50%;
+      opacity: 0;
+      transition: all $ts;
+      transition-delay: $ts;
+      @media($dt) {
+        border-left-width:4px;
+        width:17px;
+      }
+      &:before, &:after {
+        display:block;
+        content:'';
+        height:2px;
+        width:100%;
+        background:$orange;
+        position:absolute;
+        top:0;
+        left: 0;
+        @media($dt) {
+          height:4px;
+        }
+      }
+      &:after {
+        top:auto;
+        bottom:0;
+      }
+      html.__scroll-activated & {
+        left: 0;
+        opacity:1;
+      }
+
+      &.right-bracket {
+        left: auto;
+        right: 50%;
+        border:0;
+        border-right:2px solid $orange;
+        html.__scroll-activated & {
+          left: auto;
+          right: 0;
+        }
+        @media($dt) {
+          border-right-width:4px;
+        }
+      }
+    }
+  }
+}

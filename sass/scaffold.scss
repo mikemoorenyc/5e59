@@ -1,0 +1,188 @@
+*, *:before, *:after {
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+body {
+  font-family: $font-family;
+  font-size:18px;
+  line-height: $line-height-base;
+  color: white;
+  background-color: black;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased!important;
+  -webkit-text-size-adjust: none;
+}
+.noscroll { position: fixed; overflow-y:scroll }
+
+
+html {
+  overflow:hidden;
+}
+html.__assets-loaded & {
+  overflow:auto;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+textarea {
+  resize: none;
+}
+// Links
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: white;
+  //  text-decoration: underline;
+  }
+
+}
+a, a:hover, a:active, a:focus {
+  outline: 0;
+}
+
+// Figures
+//
+// We reset this here because previously Normalize had no `figure` margins. This
+// ensures we don't break anyone's use of the element.
+
+// IMGS
+img, svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+//TYPE
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+
+}
+
+//TESTING OUT DEAD OWL SCAFFOLD MARGINS
+/*
+* + * {
+  margin-top: 1em;
+}
+*/
+
+//TYPE STUFF
+ul, ol{
+  margin: 0;
+  padding-left:25px;
+ > li {
+   margin-bottom:.25em;
+ }
+}
+ul, p, ol {
+  margin-bottom: 1em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+ul.no-style {
+  margin: 0;
+  list-style: none;
+  padding:0;
+  li {
+    margin: 0;
+  }
+}
+blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  border: 0;
+  color: inherit;
+  font-style: italic;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Note: Deprecated small and .small as of v3.1.0
+  // Context: https://github.com/twbs/bootstrap/issues/11660
+  footer,
+  small,
+  .small {
+    display: block;
+    font-size: 80%; // back to default font-size
+    &:before {
+    }
+  }
+}
+
+.dt-hide {
+  display:block;
+  @media($dt) {
+    display: none !important;
+  }
+}
+
+.mobile-hide {
+  display: none;
+  @media($dt) {
+    display:block;
+  }
+}
+
+// Floats
+// -------------------------
+
+.clearfix {
+  @include clearfix();
+}
+.center-block {
+  @include center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.hidden, .hide {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// UTILITY CLASSES
+.text-overflow  {
+  @include text-overflow();
+}
+.inline-centerer {
+  @include inline-centerer();
+}
+.ab-cover {
+  @include ab-cover();
+}

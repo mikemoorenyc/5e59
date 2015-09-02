@@ -1,0 +1,21 @@
+@import 'variables.scss';
+$imgDir: '../assets/imgs';
+@import 'mixins.scss';
+@import 'utilities.scss';
+
+@import 'expand/expanded-scaffold.scss';
+@import 'slick.scss';
+@import 'expand/facts.scss';
+@import 'expand/view-bricks.scss';
+@import 'expand/fade-in.scss';
+@import 'expand/gallery.scss';
+@import 'expand/contact.scss';
+@import 'expand/nav-animation.scss';
+@import 'expand/copy-block.scss';
+@import 'expand/headline.scss';
+@import 'expand/floorplans.scss';
+@import 'expand/location.scss';
+@import 'expand/highlights.scss';
+#css-checker {
+  height: 1px;
+}

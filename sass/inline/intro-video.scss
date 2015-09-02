@@ -1,0 +1,28 @@
+#intro {
+  .video-header {
+    .holder > * {
+      display:block;
+      width: 100%;
+    }
+  }
+  .static-header {
+    .padding {
+      height:110px;
+      html._orientation-landscape & {
+        display: none;
+      }
+    }
+    .the-img {
+      position:relative;
+      width:100%;
+      background: url('assets/imgs/video-place.jpg') top center;
+      background-size: auto 100%;
+      padding-top: percentage(280/320);
+      html._orientation-landscape & {
+        padding-top: percentage(619/1200);
+        background-size:cover;
+        background-position:center center;
+      }
+    }
+  }
+}

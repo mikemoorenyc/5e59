@@ -1,0 +1,56 @@
+html.__menu-opened {
+  overflow:hidden;
+  @media($dt) {
+    overflow:auto;
+    header > div {
+      background: rgba(black,.75)
+    }
+  }
+}
+nav {
+  
+
+
+
+
+
+
+
+  html.__menu-opened & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  html.__menu-closed & {
+    transition: transform 0s $ts, opacity $ts;
+  }
+  > ul {
+    > li {
+
+      html.__menu-opened & {
+        opacity: 1;
+        transform:translateY(0);
+      }
+      &:nth-child(1) {
+        transition-delay:$ts;
+      }
+      &:nth-child(2) {
+        transition-delay:$ts*1.25;
+      }
+      &:nth-child(3) {
+        transition-delay:$ts*1.5;
+      }
+      &:nth-child(4) {
+        transition-delay:$ts*1.75;
+      }
+      &:nth-child(5) {
+        transition-delay:$ts*2;
+      }
+      &:nth-child(6) {
+        transition-delay:$ts*2.25;
+      }
+      &:nth-child(7) {
+        transition-delay:$ts*2.5;
+      }
+    }
+  }
+}

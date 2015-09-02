@@ -1,0 +1,14 @@
+.section {
+  &.border-top {
+    border-top: 1px solid $white-25;
+  }
+}
+
+
+.head-type {
+  text-transform:uppercase;
+  line-height:.8em;
+  font-family:$tungsten;
+  font-weight:normal;
+  color:white;
+}
