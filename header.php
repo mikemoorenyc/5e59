@@ -86,3 +86,6 @@ $siteDesc = 'Lorem Ipsum Dolor SIT';
 
 <body  id="top">
 <div id="css-checker"></div>
+<div id="svg-sprite" class="hide">
+  <?php include 'assets/svgs.svg';?>
+</div>

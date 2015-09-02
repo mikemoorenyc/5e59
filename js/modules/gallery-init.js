@@ -27,6 +27,8 @@ function galleryInit() {
             }
           ]
         });
+
+        $('#gallery-container').slick('slickPause');
       }
 
     });

@@ -1,5 +1,5 @@
-<div id="floorplans" class="section " data-scroll-index="4">
-  <div class="hold-1200 clearfix">
+<div id="floorplans" class="section scroll-magic" data-scroll-index="4" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
+  <div class="hold-1200 clearfix fade-child">
     <div id="left">
       <div class="headline">
         <h2 class="head-type">
@@ -92,11 +92,13 @@
       );
       foreach($dlList as $dl) {
         ?>
-        <li>
+        <li class="fade-child">
           <a href="<?php echo $dl[1];?>" target="_blank">
             <span class="title"><?php echo $dl[0];?></span>
             <span class="icon">
-              <?php include 'assets/imgs/download.svg';?>
+              <svg>
+                <use xlink:href="#download" />
+              </svg>
 
             </span>
 

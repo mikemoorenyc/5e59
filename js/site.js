@@ -1,4 +1,5 @@
 function siteInit() {
+  $(document).scrollTop(0);
   //GLOBALS
   ts = 500,
   tab = 401,

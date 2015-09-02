@@ -23,7 +23,14 @@
     }
   }
   .copy-block {
-
+    > .copy {
+      > div {
+        margin-bottom:1em;
+        &:last-child {
+          margin:0;
+        }
+      }
+    }
     @media($dt) {
       padding: 0 $left-gutter 0 $left-width;
     }

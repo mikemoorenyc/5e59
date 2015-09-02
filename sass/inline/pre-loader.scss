@@ -6,6 +6,8 @@
   top:0;
   right:0;
   bottom:0;
+  //display:none;
+  //display:block !important;
   .logo {
     position:absolute;
     left: 50%;
@@ -17,7 +19,7 @@
     position:relative;
     height:40px;
   //  background:red;
-    margin-top:20px;
+  //  margin-top:20px;
     .left-bracket, .right-bracket {
       position:absolute;
       left:0;
@@ -59,7 +61,7 @@
         border-radius:50%;
         background:white;
         opacity:0;
-        animation: LOADING 2s infinite;
+        animation: LOADING 1s infinite;
         &:nth-child(2) {
           animation-delay: 0.2s;
         }

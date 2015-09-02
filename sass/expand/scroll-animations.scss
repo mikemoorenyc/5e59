@@ -1,0 +1,46 @@
+//GENERIC FADE-in
+.fade-child {
+  opacity: 0;
+  transform:translateY(25px);
+  transition:all $ts;
+  &.__faded-in {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+
+//GALLERY
+#gallery-container {
+  opacity: 0;
+  transition: opacity $ts;
+  @media($dt) {
+    transition-delay: $ts;
+  }
+  #gallery.__scroll-activated & {
+    opacity: 1;
+  }
+}
+#gallery {
+  .bracket, &:after {
+    opacity: 0;
+    transition: all $ts;
+  }
+  .bracket.front-bracket {
+    left:50%;
+  }
+  .bracket.back-bracket, &:after {
+    right: 50%;
+  }
+  &.__scroll-activated {
+    .bracket, &:after {
+      opacity: 1;
+    }
+    .bracket.front-bracket {
+      left:65px;
+    }
+    .bracket.back-bracket, &:after {
+      right:65px;
+    }
+  }
+}

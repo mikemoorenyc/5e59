@@ -9,6 +9,18 @@ function loadCSS(e,t,n){"use strict";function o(){var t;for(var i=0;i<s.length;i
 
 loadCSS(cssExpand);
 
+//VIDEO CHECK
+var theVideo = document.getElementById("intro-vid");
+if(theVideo) {
+  var vidReady = false;
+  var isVid = true;
+  theVideo.addEventListener("canplaythrough", function(){
+  //  console.log('vidready');
+    var vidReady = true;
+  });
+} else {
+  isVid = false;
+}
 
 var jquerychecker = setInterval(function(){
 
@@ -24,33 +36,59 @@ var jquerychecker = setInterval(function(){
 function preloader() {
   var imgLoaded = 0;
   var imgCount = $('.preload').length;
-  var theVideo = document.getElementById("intro-vid");
+
 
   $('.preload').each(function(){
     var toLoad = $(this);
     $(toLoad).attr('src', $(toLoad).data('src'));
     $(toLoad).load(function(){
+
       imgLoaded++;
+      if(!(theVideo)) {
+        if(imgLoaded == imgCount) {
+          //LOAD IN FOR NON-VIDEO
+          endLoad();
+        }
+      }
 
     });
   });
+
+  //LOAD IN FOR VIDEO
+  if(theVideo) {
+    var loadCheck = setInterval(function(){
+      if((imgLoaded === imgCount)&&(vidReady==false)) {
+        endLoad();
+        clearInterval(loadCheck);
+        return false;
+      }
+    },10);
+  }
   function endLoad() {
     console.log('pre loaded');
     $.getScript(siteDir+"js/main.js?v="+timestamp);
     $(document).scrollTop(0);
-    $('#preloader').fadeOut(500);
-    clearInterval(loadCheck);
-    return false;
+    $('#preloader').fadeOut(500, function(){
+      //var myVideo = document.getElementById("intro-vid");
+      if(theVideo) {
+        theVideo.play();
+      }
+      if(isVid == true) {
+        vidTimer = 500;
+      } else {
+        vidTimer = 0
+      }
+      setTimeout(function(){
+        $('html').addClass('__scroll-activated');
+      },vidTimer);
+    });
+
+  //  clearInterval(loadCheck);
+    //return false;
   }
-  var loadCheck = setInterval(function(){
-    if(theVideo) {
-      if(imgLoaded == imgCount && theVideo.readyState === 4){
-        endLoad();
-      }
-    }else {
-      if(imgLoaded == imgCount) {
-      endLoad();
-      }
-    }
-  },10);
+
+
+
+
+
 }

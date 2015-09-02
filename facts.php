@@ -1,11 +1,11 @@
-<div id="facts" data-scroll-index="1">
+<div id="facts" data-scroll-index="1" class="scroll-magic" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
   <div class="hold-1200">
   <!--  <div class="img-holder">
       <img data-src="assets/imgs/orange-5.jpg" class="late-load fade-in" />
 
     </div>-->
 
-    <div class="copy-block">
+    <div class="copy-block fade-child">
       <h2>
         BUILDING
       </h2>
@@ -34,7 +34,7 @@
       );
       foreach($factList as $fl) {
         ?>
-        <li>
+        <li class="fade-child">
           <div class="header">
             <?PHP echo $fl[0];?>
           </div>

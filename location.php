@@ -1,12 +1,12 @@
-<div id="location" class="section border-top" data-scroll-index="3">
+<div id="location" class="section border-top scroll-magic" data-scroll-index="3" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
   <div class="hold-1200">
-    <div class="location-copy">
-      <div class="headline">
+    <div class="location-copy fade-child">
+      <div class="headline ">
         <h2 class="head-type">
           IN GOOD <br/>COMPANY
         </h2>
       </div>
-      <div class="copy-block">
+      <div class="copy-block ">
         <h2>
           Location
         </h2>
@@ -21,7 +21,7 @@
       </div>
 
     </div>
-    <div id="thumbnail-holder">
+    <div id="thumbnail-holder" class="fade-child">
       <a href="#" class="location-pop modal-expander" data-map="assets/imgs/map-hi.png">
         <img data-src="assets/imgs/map-low.png" class="late-load"/>
         <span class="text-wrapper">
@@ -34,7 +34,9 @@
 
         </span>
         <span class="magnify">
-          <?php include 'assets/imgs/magnifier12.svg';?>
+          <svg>
+            <use xlink:href="#magnifier12" />
+          </svg>
         </span>
       </a>
     </div>
@@ -42,12 +44,16 @@
 
     <div id="map-modal" class="mobile-hide modal">
       <div class="loader">
-        <?php include 'assets/imgs/loading-icon.svg';?>
+        <svg>
+          <use xlink:href="#loading-icon" />
+        </svg>
       </div>
 
       <a class="modal-close">
 
-        <?php include 'assets/imgs/close-icon.svg';?>
+        <svg>
+          <use xlink:href="#close-icon" />
+        </svg>
       </a>
     </div>
 

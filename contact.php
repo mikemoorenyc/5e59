@@ -1,4 +1,4 @@
-<div id="contact" class="section border-top" data-scroll-index="5">
+<div id="contact" class="section border-top scroll-magic bottom-block" data-scroll-index="5" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
   <div class="hold-1200">
   <!--  <div class="copy-block">
       <h2 class="header">
@@ -35,8 +35,8 @@ $newmarkArray = array(
 ?>
 
     <div id="contact-blocks" class="clearfix">
-      <div class="block">
-        <div class="copy-block">
+      <div class="block fade-child">
+        <div class="copy-block ">
           <h2>
             winick retail specialist
           </h2>
@@ -48,15 +48,15 @@ $newmarkArray = array(
           }
           ?>
         </ul>
-        <div class="logo">
+        <div class="logo ">
           <a href="http://winick.com" target="_blank">
             <img src="assets/imgs/winick-logo.png" />
           </a>
         </div>
 
       </div>
-      <div class="block">
-        <div class="copy-block">
+      <div class="block fade-child">
+        <div class="copy-block ">
           <h2>
             newmark grubb knight frank
           </h2>
@@ -69,16 +69,16 @@ $newmarkArray = array(
           ?>
         </ul>
 
-        <div class="logo">
-          <a href="http://winick.com" target="_blank">
+        <div class="logo ">
+
             <img src="assets/imgs/newmark-logo.png" />
-          </a>
+
         </div>
 
 
       </div>
 
-      <div id="bottom-logos">
+      <div id="bottom-logos" class="fade-child">
         <img  class=" left late-load fade-in" data-src="assets/imgs/greenoak-logo.png" />
 <img  class=" left late-load fade-in" data-src="assets/imgs/capstone-logo.png" />
       </div>

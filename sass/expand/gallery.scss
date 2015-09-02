@@ -35,12 +35,13 @@
     &:after {
       display:block;
       content: '';
-      right: 70px;
+      right: 65px;
       width:1px;
       background:white;
       top:5px;
       bottom:5px;
       position:absolute;
+      transform:translateX(-5px);
     }
     .slide {
       >img {

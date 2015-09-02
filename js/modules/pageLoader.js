@@ -41,5 +41,10 @@ function pageLoader() {
   }
 */
 
+scrollMagic();
+
   $('html').addClass('__assets-loaded');
+
+  
+
 }

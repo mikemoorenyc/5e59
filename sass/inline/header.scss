@@ -27,7 +27,7 @@ header {
   }
   #logo {
     float: left;
-    img {
+    img, svg {
       width: 156px;
       height: 28px;
       @media($dt) {

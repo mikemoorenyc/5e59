@@ -1,10 +1,10 @@
-<div id="gallery">
+<div id="gallery" class="scroll-magic" data-scrollfunction="galleryFade">
 <div class="inner">
   <div class="back-bracket bracket">
 
     <div class="line"></div>
   </div>
-  <div id="gallery-container" class="fade-in">
+  <div id="gallery-container" class="fade-in clearfix">
     <?php
 
     $slideArray = array(
@@ -30,6 +30,6 @@
   <div class="front-bracket bracket">
     <div class="line"></div>
   </div>
-  
+
 </div>
 </div>
