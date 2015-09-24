@@ -6,12 +6,12 @@ $('#plan-tabber li a').click(function(){
         copy = $('#state-copy > div[data-type="'+type+'"]').find('.copy').html(),
         img = $('#state-copy > div[data-type="'+type+'"]').find('.img').html();
 
-    $( "#spec-img, #spec .copy" ).animate({
+    $( "#spec-img" ).animate({
       opacity: 0
     }, ts, function() {
       $('#spec-img').html(img);
-      $('#spec .copy').html(copy);
-      $( "#spec-img, #spec .copy" ).animate({opacity:1});
+      //$('#spec .copy').html(copy);
+      $( "#spec-img" ).animate({opacity:1});
     });
 
   }

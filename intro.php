@@ -24,7 +24,7 @@
         <div id="intro-video" class="video">
           <div class="holder">
             <video preload loop muted id="intro-vid">
-  <source src="test.mp4" type="video/mp4">
+<source src="https://s3.amazonaws.com/reacdn/test.mp4" type="video/mp4">
 
           <img class="preload" data-src="assets/imgs/video-place.jpg" />
     </video>

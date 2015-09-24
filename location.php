@@ -13,7 +13,8 @@
 
         <div class="copy">
           <p>
-  At the summit of the Fifth Avenue, with neighbors Cartier, Bergdorf, and the inescapable Apple Store, 5 E 59 resides in the most favorable retail climate in Manhattan, and the world. Superbly connected by 14 subway lines, its broad welcoming façade will be noticed by thousands of people a day.
+            At the apex of Fifth Avenue, with neighbors Cartier, Berdorf Goodman, and the iconic Apple cube, 5 East 59th Street resides in the most desirable retail corridor in Manhattan, and the world. Superbly connected by 14 subway lines, its broad welcoming façade will be noticed
+          by thousands of people every day.
   </p>
 
         </div>

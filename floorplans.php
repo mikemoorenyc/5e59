@@ -26,11 +26,12 @@
 
           <div class="copy">
             <ul>
-              <li>  8 Levels</li>
-              <li>Up to 35,000 SF</li>
-              <li>50 feet of street frontage </li>
+              <li>  8 levels + basement</li>
+              <li>Up to 30,000 usable SF</li>
+              <li>50 feet of street frontage</li>
               <li>100 feet of vertical branding potential </li>
-              <li>Penthouse Terrace</li>
+              <li>Penthouse with terrace</li>
+              <li>Fully customizable </li>
             </ul>
           </div>
 
@@ -50,15 +51,16 @@
       <img class="late-load" data-src="assets/imgs/elevation-dt.png" />
       <img class="late-load" data-src="assets/imgs/elevation-mobile.png" />
       <div data-type="floorplan">
-        <div class="copy">
+      <!--  <div class="copy">
           <ul>
-            <li>  8 Levels</li>
-            <li>Up to 35,000 SF</li>
-            <li>50 feet of street frontage </li>
+            <li>  8 levels + basement</li>
+            <li>Up to 30,000 usable SF</li>
+            <li>50 feet of street frontage</li>
             <li>100 feet of vertical branding potential </li>
-            <li>Penthouse Terrace</li>
+            <li>Penthouse with terrace</li>
+            <li>Fully customizable </li>
           </ul>
-        </div>
+        </div>-->
         <div class="img">
           <img class="fp-img" src="assets/imgs/floorplan.jpg" />
         </div>
@@ -66,12 +68,12 @@
       </div>
 
       <div data-type="elevation">
-        <div class="copy">
+        <!--<div class="copy">
           <ul>
           <li>  50 X 100 Ft Street Frontage Oppotunity</li>
 
           </ul>
-        </div>
+        </div>-->
         <div class="img">
           <div class="elevation-img"></div>
         </div>
@@ -86,7 +88,7 @@
       <?php
       $dlList = array(
         array('Elevation<br/>Plan', '#'),
-        array('TYPICAL<br/>FLOORPLAN', '#'),
+        array('Ground<br/>FLOORPLAN', '#'),
         array('Brochure<br/>& Images', '#'),
         array('Top 12<br/>Highlights', '#')
       );

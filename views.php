@@ -78,7 +78,7 @@ OPPORTUNITY
 
       <div class="copy">
         <p>
-      Offering a wide 50’ by 100’ of frontage, including 22-foot, double height  ground floor. The building will be braced with blades demarking the buildings unrivaled presence on 59th which can be branded with facade and blade signage.
+      Offering a wide 50 feet of frontage including a 22-foot, double-height ground floor. Unrivaled branding potential includes as-of-right blade and facade signage with visibility to 59th Street, Fifth Avenue and Madison Avenue, as well as unlimited possibilities within the 100 vertical feet of customizable facade.
 </p>
 
       </div>

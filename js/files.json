@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "type":"VIDEO",
+      "sources": {
+        "mp4":{
+          "source":"test.mp4",
+          "size":2245643
+        }
+      }
+    }
+  ]
+}
+  

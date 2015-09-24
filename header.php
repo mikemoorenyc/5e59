@@ -63,6 +63,9 @@ $siteDesc = 'Lorem Ipsum Dolor SIT';
 <!-- For everything else -->
 <link rel="shortcut icon" href="<?php echo $siteDir;?>assets/imgs/icons/favicon.ico">
 
+
+
+
 <!--  STUFF FOR IE8 WILL GET REMOVED ON COMPILATION // REMOVE THIS LINE TO RENDER IT
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="<?php echo $siteDir;?>/css/expanded.css" />
@@ -85,6 +88,10 @@ $siteDesc = 'Lorem Ipsum Dolor SIT';
 </head>
 
 <body  id="top">
+
+
+
+
 <div id="css-checker"></div>
 <div id="svg-sprite" class="hide">
   <?php include 'assets/svgs.svg';?>

@@ -25,6 +25,13 @@ gulp.task('js', function () {
     .pipe(uglify())
     .on('error', console.error.bind(console))
     .pipe(gulp.dest('../'+buildDir+'/js'));
+  gulp.src('js/loader.js')
+    .pipe(uglify())
+    .on('error', console.error.bind(console))
+    .pipe(gulp.dest('../'+buildDir+'/js'));
+  gulp.src('js/files.json')
+    .pipe(gulp.dest('../'+buildDir+'/js'));
+
 });
 
 gulp.task('svgstore', function () {
