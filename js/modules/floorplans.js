@@ -10,8 +10,13 @@ $('#plan-tabber li a').click(function(){
       opacity: 0
     }, ts, function() {
       $('#spec-img').html(img);
-      //$('#spec .copy').html(copy);
       $( "#spec-img" ).animate({opacity:1});
+    });
+    $('#spec .copy-block').animate({
+      opacity:0
+    }, ts, function(){
+      $('#floorplans #spec .copy-block').html(copy);
+      $('#floorplans #spec .copy-block').animate({opacity:1},ts);
     });
 
   }
@@ -19,3 +24,8 @@ $('#plan-tabber li a').click(function(){
 
   return false;
 });
+
+
+$('#floorplans #spec .copy-block').html(
+$($('#state-copy > div[data-type="floorplan"]').find('.copy').html())
+);

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.realestatearts.e59" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <access hap-rule="yes" origin="http://5e59.realestatearts.org/*" />
+    <icon hap-default-image="yes" height="40" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/40x40.png" width="40" />
+    <icon hap-default-image="yes" height="80" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/80x80.png" width="80" />
+    <icon hap-default-image="yes" height="50" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/50x50.png" width="50" />
+    <icon hap-default-image="yes" height="100" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/100x100.png" width="100" />
+    <icon hap-default-image="yes" height="57" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/57x57.png" width="57" />
+    <icon hap-default-image="yes" height="114" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/114x114.png" width="114" />
+    <icon hap-default-image="yes" height="60" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/60x60.png" width="60" />
+    <icon hap-default-image="yes" height="120" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/120x120.png" width="120" />
+    <icon hap-default-image="yes" height="180" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/180x180.png" width="180" />
+    <icon hap-default-image="yes" height="72" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/72x72.png" width="72" />
+    <icon hap-default-image="yes" height="144" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/144x144.png" width="144" />
+    <icon hap-default-image="yes" height="76" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/76x76.png" width="76" />
+    <icon hap-default-image="yes" height="152" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/152x152.png" width="152" />
+    <icon hap-default-image="yes" height="29" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/29x29.png" width="29" />
+    <icon hap-default-image="yes" height="58" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/58x58.png" width="58" />
+    <splash hap-default-image="yes" height="768" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/1024x768.png" width="1024" />
+    <splash hap-default-image="yes" height="1536" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/2048x1536.png" width="2048" />
+    <splash hap-default-image="yes" height="1024" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/768x1024.png" width="768" />
+    <splash hap-default-image="yes" height="2048" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/1536x2048.png" width="1536" />
+    <splash hap-default-image="yes" height="1136" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/640x1136.png" width="640" />
+    <splash hap-default-image="yes" height="1242" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/2208x1242.png" width="2208" />
+    <splash hap-default-image="yes" height="480" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/320x480.png" width="320" />
+    <splash hap-default-image="yes" height="960" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/640x960.png" width="640" />
+    <splash hap-default-image="yes" height="1334" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/750x1334.png" width="750" />
+    <splash hap-default-image="yes" height="2208" src="plugins/cordova-plugin-hostedwebapp/assets/defaultImages/ios/1242x2208.png" width="1242" />
+    <name>5e59RealestateartsOrg</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="http://5e59.realestatearts.org/" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>

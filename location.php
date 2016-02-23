@@ -1,4 +1,4 @@
-<div id="location" class="section border-top scroll-magic" data-scroll-index="3" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
+<section id="location" class="section border-top scroll-magic" data-scroll-index="3" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
   <div class="hold-1200">
     <div class="location-copy fade-child">
       <div class="headline ">
@@ -8,13 +8,13 @@
       </div>
       <div class="copy-block ">
         <h2>
-          Location
+          The Location
         </h2>
 
         <div class="copy">
           <p>
-            At the apex of Fifth Avenue, with neighbors Cartier, Berdorf Goodman, and the iconic Apple cube, 5 East 59th Street resides in the most desirable retail corridor in Manhattan, and the world. Superbly connected by 14 subway lines, its broad welcoming façade will be noticed
-          by thousands of people every day.
+            At the apex of Fifth Avenue, with neighbors Cartier, Bergdorf Goodman, and the iconic Apple cube, 5 East 59th Street resides
+in the most desirable retail corridor in Manhattan, and the world. Superbly connected by nine subway lines, its broad and welcoming façade will be noticed by thousands of people every day. 
   </p>
 
         </div>
@@ -23,7 +23,7 @@
 
     </div>
     <div id="thumbnail-holder" class="fade-child">
-      <a href="#" class="location-pop modal-expander" data-map="assets/imgs/map-hi.png">
+      <a href="#" class="location-pop modal-expander" data-map="assets/imgs/map-2000-updated.png">
         <img data-src="assets/imgs/map-low.png" class="late-load"/>
         <span class="text-wrapper">
           <span class="text ">
@@ -59,4 +59,4 @@
     </div>
 
   </div>
-</div>
+</section>

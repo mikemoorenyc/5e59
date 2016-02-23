@@ -91,8 +91,12 @@ gulp.task('fontdump', function(){
 });
 
 gulp.task('wpdump', function(){
-  gulp.src(['style.css', 'screenshot.png'])
+  gulp.src(['style.css', 'screenshot.png', 'manifest.json'])
     .pipe(gulp.dest('../'+buildDir));
+});
+gulp.task('pdfdump', function(){
+  gulp.src(['pdfs/**/*.pdf'])
+    .pipe(gulp.dest('../'+buildDir+'/pdfs'));
 });
 
 gulp.task('lint', function() {
@@ -110,7 +114,8 @@ gulp.task('watch', function() {
     gulp.watch('assets/imgs/**/*', ['imgmin']);
     gulp.watch('assets/fonts/**/*', ['fontdump']);
     gulp.watch(['*.php', '*.html'], ['templatecrush']);
-    gulp.watch(['style.css', 'screenshot.png'], ['wpdump']);
+    gulp.watch(['style.css', 'screenshot.png', 'manifest.json'], ['wpdump']);
     gulp.watch(['assets/svgs/*.svg'], ['svgstore']);
+    gulp.watch(['pdfs/**/*.pdf'], ['pdfdump'])
 });
-gulp.task('build', [ 'js', 'imgmin', 'templatecrush', 'fontdump', 'wpdump','sass','svgstore']);
+gulp.task('build', [ 'js', 'imgmin', 'templatecrush', 'fontdump', 'wpdump','sass','svgstore', 'pdfdump']);

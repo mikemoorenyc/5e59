@@ -1,4 +1,4 @@
-<div id="gallery" class="scroll-magic" data-scrollfunction="galleryFade">
+<section id="gallery" class="scroll-magic" data-scrollfunction="galleryFade">
 <div class="inner">
   <div class="back-bracket bracket">
 
@@ -8,9 +8,13 @@
     <?php
 
     $slideArray = array(
-      array('assets/imgs/fake-gal-1.jpg'),
-      array('assets/imgs/fake-gal-2.jpg'),
-      array('assets/imgs/fake-gal-3.jpg')
+      array('assets/imgs/gal-1.jpg'),
+      array('assets/imgs/gal-2.jpg'),
+      array('assets/imgs/gal-3.jpg'),
+      array('assets/imgs/gal-4.jpg'),
+      array('assets/imgs/gal-5.jpg'),
+      array('assets/imgs/gal-6.jpg'),
+      array('assets/imgs/gal-7.jpg'),
 
     );
     foreach($slideArray as $sa) {
@@ -32,4 +36,4 @@
   </div>
 
 </div>
-</div>
+</section>

@@ -1,0 +1,8 @@
+{
+    "name": "5e59RealestateartsOrg",
+    "description": "Content from http://5e59.realestatearts.org/",
+    "launch_path": "/",
+    "icons": {
+        "128": "icon128.png"
+    }
+}

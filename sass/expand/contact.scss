@@ -186,6 +186,13 @@
 
   }
 }
+
+#contact #contact-blocks {
+  @media($dt) {
+    background: url(../assets/imgs/footer-5.jpg) right 20px no-repeat;
+  }
+}
+
 /*
 #contact {
   position: relative;

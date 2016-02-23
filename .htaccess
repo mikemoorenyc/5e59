@@ -1,3 +1,8 @@
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^5e59.com [NC]
+RewriteRule ^(.*)$ http://www.5e59.com/$1 [L,R=301,NC]
+
 <IfModule mod_expires.c>
     # Activate mod_expires for this directory
     ExpiresActive on

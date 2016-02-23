@@ -1,4 +1,4 @@
-<div id="contact" class="section border-top scroll-magic bottom-block" data-scroll-index="5" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
+<section id="contact" class="section border-top scroll-magic bottom-block" data-scroll-index="5" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
   <div class="hold-1200">
   <!--  <div class="copy-block">
       <h2 class="header">
@@ -22,14 +22,15 @@ function contactBlock($name,$phone,$email) {
 }
 
 $winickArray = array(
-  array('Jeff<br/> Winick', '212.792.2601', 'jeff@winick.com'),
-  array('DARRYL<br/> RUBENS', '212.792.2623', 'rubens@winick.com'),
+  array('DARRelL<br/> RUBENS', '212.792.2616', 'rubens@winick.com'),
   array('kelly<br/> gedinsky', '212.792.2637', 'kelly@winick.com'),
-  array('lee<br/> block', '212.792.2649', 'lee@winick.com')
+
+  array('lee<br/> block', '212.792.2649', 'lee@winick.com'),
+  array('Jeff<br/> Winick', '212.792.2601', 'jeff@winick.com')
 );
 $newmarkArray = array(
   array('David<br/>Falk','212.372.2271','dfalk@ngkf.com'),
-  array('Danny<br/>Levine','212.372.2319','dlevine@ngkf.com'),
+  array('Daniel<br/>Levine','212.372.2319','dlevine@ngkf.com'),
   array('Jason <br/>Greenstein','212.372.2349','jgreenstein@ngkf.com')
 );
 ?>
@@ -101,4 +102,4 @@ $newmarkArray = array(
     </div>-->
 
   </div>
-</div>
+</section>

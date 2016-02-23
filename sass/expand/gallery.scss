@@ -1,4 +1,8 @@
+#gallery {
+  max-width: 1200px;
+  margin: 0 auto;
 
+}
 #gallery-container {
   .slick-dots {
     padding-left:0;
@@ -94,12 +98,12 @@
         bottom: 0;
       }
       &.front-bracket {
-        left: 65px;
+        left: 25px;
 
 
       }
       &.back-bracket {
-        right: 65px;
+        right: 25px;
 
         &:before, &:after, .line  {
           background: none;

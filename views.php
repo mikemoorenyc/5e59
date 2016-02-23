@@ -1,8 +1,8 @@
-<div id="views" class="section border-top scroll-magic" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
+<section id="views" class="section border-top scroll-magic" data-scrollfunction="genericFadeIn" data-scrollvariables="theObject">
   <div class="hold-1200">
     <div class="headline" class="fade-child">
       <h2 class="sm head-type">
-A BLANK SLATE FOR REWRITING RETAIL
+A BLANK CANVAS<br/> FOR YOUR BRAND
 
       </h2>
     </div>
@@ -13,7 +13,7 @@ A BLANK SLATE FOR REWRITING RETAIL
           <span class="text-wrapper">
           <span class="text ">
             <span class="bracket left-bracket"></span>
-            <span class="copy">Front View</span>
+            <span class="copy">Street View</span>
             <span class="bracket right-bracket"></span>
 
           </span>
@@ -28,7 +28,7 @@ A BLANK SLATE FOR REWRITING RETAIL
           <span class="text-wrapper">
             <span class="text ">
               <span class="bracket left-bracket"></span>
-              <span class="copy">Top View</span>
+              <span class="copy">Penthouse &amp; Terrace</span>
               <span class="bracket right-bracket"></span>
 
             </span>
@@ -70,15 +70,16 @@ A BLANK SLATE FOR REWRITING RETAIL
         </svg>
       </a>
     </div>
-
+<div class="copy-container">
     <div class="copy-block fade-child">
       <h2>
-OPPORTUNITY
+THE OPPORTUNITY
       </h2>
 
       <div class="copy">
         <p>
-      Offering a wide 50 feet of frontage including a 22-foot, double-height ground floor. Unrivaled branding potential includes as-of-right blade and facade signage with visibility to 59th Street, Fifth Avenue and Madison Avenue, as well as unlimited possibilities within the 100 vertical feet of customizable facade.
+      Offering a wide 50 feet of frontage including a 22&#8209;foot, double&#8209;height ground floor. Unrivaled branding potential includes as&#8209;of&#8209;right façade and blade signage with visibility to Fifth and Madison Avenues, as well as unlimited possibilities within the 100
+vertical feet of customizable façade.
 </p>
 
       </div>
@@ -86,6 +87,6 @@ OPPORTUNITY
     </div>
 
 
-
-  </div>
 </div>
+  </div>
+</section>

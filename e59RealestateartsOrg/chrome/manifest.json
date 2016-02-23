@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "http://5e59.realestatearts.org/",
+    "version": "0.0.1",
+    "app": {
+        "launch": {
+            "web_url": "http://5e59.realestatearts.org/"
+        }
+    },
+    "icons": {
+        "128": "icon128.png"
+    }
+}

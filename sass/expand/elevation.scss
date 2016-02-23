@@ -1,0 +1,123 @@
+#elevation {
+  padding-bottom: 55px;
+  @media($dt) {
+    padding-bottom:105px;
+  }
+  .headline {
+    padding: 55px 3.75%;
+  }
+  .top-section {
+    @media($dt) {
+      position:relative;
+      .copy-block {
+        padding: 105px $left-gutter 105px $left-width;
+      }
+      .headline {
+        position: absolute;
+        left: 0;
+        top: (105px + 32px);
+        width:percentage(550/1200);
+        padding: 0 0 0 percentage(170/1200)
+      }
+    }
+  }
+  .holder {
+    @media($dt) {
+      position:relative;
+      > * {
+        float: left;
+        width: 50%;
+        margin: 0;
+      }
+    }
+  }
+  .elevation-img {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    @media($dt) {
+      position: absolute;
+      width: 50%;
+      top: 0;
+      right: 0;
+      height: 100%;
+      margin: 0;
+      padding-left:5px;
+      padding-right:10px;
+    }
+    .inner {
+      position:relative;
+      width: 100%;
+      height: 0px;
+      padding-top: 75%;
+      background: url(../assets/imgs/elevation-side.jpg) center center no-repeat;
+      background-size: cover;
+      @media($dt) {
+        padding-top:0;
+        height: 100%;
+      }
+    }
+  }
+  .main-elevation {
+    font-size: 14px;
+    margin-top: 30px;
+
+    @media($dt) {
+      padding: 0 5px 0 10px;
+      margin: 0;
+    }
+    .inner {
+      max-width:580px;
+      width:100%;
+      height: (830em/14);
+      position:relative;
+      @media($dt) {
+        float: right;
+
+      }
+      &:after {
+        display:block;
+        content:'';
+        position:absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: percentage(356/580);
+        background: url(../assets/imgs/elevation-main.jpg) bottom center no-repeat;
+        background-size:cover;
+      }
+      .key {
+        position: absolute;
+        right: (367em/14);
+        border-right: 1px solid white;
+        padding-right: (20em/14);
+        text-align: right;
+        .copy {
+          font-size:(14em/14);
+          text-transform:uppercase;
+          letter-spacing:.5em;
+          color:$orange;
+          font-weight: bold;
+          line-height:normal;
+          display:inline-block;
+          vertical-align:middle;
+          @media($dt) {
+            font-weight: 600;
+          }
+        }
+        &.retail {
+          line-height:(206em/14);
+          bottom: (125em/14);
+        }
+        &.office {
+          line-height:(374em/14);
+          bottom: (347em/14);
+        }
+        &.penthouse {
+          line-height:(75em/14);
+          bottom: (736em/14);
+        }
+      }
+    }
+  }
+}

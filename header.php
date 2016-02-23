@@ -27,7 +27,7 @@ $siteTitle = '5 East 59th Street';
 
 //DECLARE THE PAGE EXCERPT
 global $siteDesc;
-$siteDesc = 'Lorem Ipsum Dolor SIT';
+$siteDesc = '5 East 59th Street sits in the heart of the Plaza District, NYC’s preeminent shopping and commercial neighborhood, and is located directly across from the iconic Apple cube, believed to be the highest grossing retail store in the world.';
 ?>
 <!DOCTYPE html>
 <html lang="en" class="__menu-closed <?php echo $mobileClass;?>">
@@ -51,7 +51,7 @@ $siteDesc = 'Lorem Ipsum Dolor SIT';
 <!-- icons & favicons -->
 <link rel="shortcut icon" href="<?php echo $siteDir;?>assets/imgs/icons/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href="<?php echo $siteDir;?>assets/imgs/icons/apple-touch-icon.png" />
-<link rel="apple-touch-icon" sizes="57x57" href="<?php echo $siteDir;?>assets/imgs/imgs/icons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="<?php echo $siteDir;?>assets/imgs/icons/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="<?php echo $siteDir;?>assets/imgs/icons/apple-touch-icon-72x72.png" />
 <link rel="apple-touch-icon" sizes="76x76" href="<?php echo $siteDir;?>assets/imgs/icons/apple-touch-icon-76x76.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="<?php echo $siteDir;?>assets/imgs/icons/apple-touch-icon-114x114.png" />
@@ -84,11 +84,26 @@ $siteDesc = 'Lorem Ipsum Dolor SIT';
 <meta property="og:image" content="<?php echo $siteDir;?>assets/blue-pin.jpg" />
 <meta property="og:description" content="<?php echo $siteDesc;?>" />
 -->
+<!-- GEO TAGS -->
+<meta name="geo.region" content="US-NY" />
+<meta name="geo.placename" content="New York" />
+<meta name="geo.position" content="40.764232;-73.97222" />
+<meta name="ICBM" content="40.764232, -73.97222" />
 
 </head>
 
 <body  id="top">
-
+<div class="snippet hide">
+<div itemscope itemtype="http://schema.org/Place">
+  <h1><span itemprop="name">5 East 59th Street</span></h1>
+  <span itemprop="description"> 5 East 59th Street sits in the heart of the Plaza District, NYC’s preeminent shopping and commercial neighborhood, and is located directly across from the iconic Apple cube, believed to be the highest grossing retail store in the world.</span>
+  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <span itemprop="streetAddress">5 E 59th St</span>
+    <span itemprop="addressLocality">New York</span>,
+    <span itemprop="addressRegion">NY</span>
+  </div>
+</div>
+</div>
 
 
 

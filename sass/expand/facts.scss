@@ -19,8 +19,8 @@
   padding: 50px 36% 0 3.75%;
   position: relative;
   @media($dt) {
-    padding: 0;
-    text-align: center;
+    padding: 0 0 0 percentage(90/1200);
+    text-align: left;
 
   }
 
@@ -43,14 +43,17 @@
     position: relative;
     text-transform: uppercase;
     white-space: nowrap;
-    display:inline-block;
+    display:block;
     vertical-align:top;
     clear:both;
     margin-bottom:30px;
     margin-right: 20px;
     @media($dt) {
-      margin: 50px 45px 0 45px;
-
+      display:inline-block;
+      //margin: 50px 45px 0 45px;
+      width: percentage(350 / (1200-90));
+      margin: 50px 0 0 0;
+      padding-right: percentage(20/1200);
     }
     &:last-child {
       margin-bottom:0;
@@ -61,6 +64,10 @@
       letter-spacing:.5em;
       line-height:1.2em;
       color:$orange;
+      padding-bottom: 10px;
+      margin-bottom:15px;
+      border-bottom: 1px solid $white-50;
+      display:inline-block;
       @media($dt) {
         font-size:12px;
       }

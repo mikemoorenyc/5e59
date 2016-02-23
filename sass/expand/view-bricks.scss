@@ -6,6 +6,9 @@
   @media($dt) {
     padding:80px 0;
   }
+  .copy-container {
+    position: relative;
+  }
   .copy-block {
     padding-top:30px;
     @media($dt) {
@@ -17,9 +20,9 @@
     @media($dt) {
       position:absolute;
       padding: 0;
-      width: (100% - $left-width);
-      padding-right: $right-gutter;
-      bottom: 20px;
+      width: percentage(490/1200);
+      padding-right: 0;
+      top: (50px + 32px);
       right: 0;
       h2 {
         font-size:80px;

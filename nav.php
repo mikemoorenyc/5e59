@@ -2,6 +2,7 @@
   <div class="clearfix">
     <h1 id="logo">
       <a href="#intro" class="scroll" data-scroll-nav="0">
+        <span class="hide">5 East 59th Street</span>
         <svg>
           <use xlink:href="#logo" />
         </svg>

@@ -33,3 +33,11 @@ $('#view-modal').click(function(){
 
   });
 });
+
+
+if(windoww >= dt) {
+  $('#views .copy-container').prepend(
+    '<div class="headline-container fade-child" />'
+  );
+  $("#views .copy-container .headline-container").html($('#views .headline'));
+}

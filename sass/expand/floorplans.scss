@@ -29,8 +29,8 @@
 }
 #spec {
   ul {
-    list-style:none;
-    padding:0;
+    //list-style:none;
+    padding:0 0 0 15px;
     >li {
       margin:5px 0;
     }
@@ -52,8 +52,8 @@
     background-size:100% 100%;
     @media($dt) {
       width: 582px;
-      height: 784px;
-      background-image:url('../assets/imgs/elevation-dt.png');
+      height: 833px;
+      background-image:url('../assets/imgs/elevation-img-png.png');
       margin: 0;
     }
   }
@@ -175,7 +175,7 @@
       }
     }
     #left {
-      min-height:835px;
+      min-height:833px;
       padding: 0 630px 0 7.5%;
       .headline {
         padding: 0 20px 0 0;
@@ -183,7 +183,7 @@
       }
       .copy-block{
         padding: 34px 20px 0 0;
-        max-width:350px;
+        max-width:400px;
         h2 {
           display:inline-block;
         }
